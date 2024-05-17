@@ -1,9 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 
-function Navbar() {
+const Container = styled.div`
+    height: 60px;
+    background-color: black;
+`
+
+const Navbar = ()=>{
   return (
-    <div>Navbar</div>
+    <Container>
+      
+    </Container>
+
+
   )
 }
 
-export default Navbar
+export default Navbar  
