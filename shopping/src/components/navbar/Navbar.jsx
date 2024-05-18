@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import SearchIcon from '@mui/icons-material/Search';
+
 const Container = styled.div`
   height: 60px;  
   background-color: black;
@@ -43,11 +45,9 @@ const Navbar = ()=>{
 
         <Left>
         <Language>EN</Language>
-          <SearchContainer>
-            <input 
-            type
-            icon
-            />
+        <SearchContainer>
+            <Input placeholder="Search" />
+            <SearchIcon style={{ color: 'gray', fontSize: 16 }} />
           </SearchContainer>
 
 
