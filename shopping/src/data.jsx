@@ -15,7 +15,7 @@ export const SliderItems = [
     },
     {
         id: 3,
-        img: "https://www.pexels.com/photo/a-man-in-black-shirt-standing-in-front-of-a-light-23657500/",
+        img: "https://images.pexels.com/photos/2752045/pexels-photo-2752045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         title: "SUMMER SALE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "f5fafd",
