@@ -16,7 +16,58 @@ const Container = styled.div`
 
 
 `
-//3340
+
+const Wrapper = styled.div`  
+    height: 100%;
+`
+
+
+const Slide = styled.div`
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    transition: all 1.5s ease;
+    align-items: center;
+`
+
+const ImgContainer = styled.div`
+    height: 100%;
+
+    flex: 1;
+
+`
+const InfoContainer = styled.div`
+    padding: 50px;
+    flex: 1;
+`
+const Image = styled.img`
+    height: 100%;    
+`
+
+const Title = styled.h1`
+    font-size: 70px;
+
+`
+
+const Desc = styled.p`
+    margin: 50px 0px;
+    font-size: 20px;
+    font-weight: 500;
+`
+
+const Button = styled.button`
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+
+`
+
+
+
+
+
+
 
 const Arrow = styled.div`
     width: 50px;
@@ -37,6 +88,10 @@ const Arrow = styled.div`
     z-index: 2;
 `   
 
+
+
+
+
 const Slider = () => {
   return (
     <Container>
@@ -45,6 +100,29 @@ const Slider = () => {
         <Arrow direction="left">
             <KeyboardArrowLeftIcon />              
         </Arrow>
+
+
+        <Wrapper>
+        <Slide>
+            <ImgContainer>           
+                <Image src="https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+            
+            </ImgContainer>
+            <InfoContainer>
+
+                <Title>Denim Jumpsuit</Title>   
+                <Desc>High quality product</Desc>   
+                <Button>ADD TO CART</Button>
+
+            </InfoContainer>
+
+
+
+            </Slide>
+        </Wrapper>
+
+
+
 
         <Arrow direction="right">
             <KeyboardArrowRightIcon />              
