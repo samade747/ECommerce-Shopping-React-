@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/navbar/Navbar'
 import Announcement from '../components/Announcement'
 import Slider from '../components/Slider'
+import { Categories } from '../data'
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     <Announcement />
     <Navbar />  
     <Slider />
+    <Categories />
       
     </div>
   )
