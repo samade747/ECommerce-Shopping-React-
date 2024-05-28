@@ -175,6 +175,45 @@ const Footer = () => {
             </ContactItem>
 
 
+            <PaymentContainer>
+                <PaymentIconContainer>
+                    <PaymentIcon color="3B5999">
+                        <Facebook />
+                    </PaymentIcon>
+                </PaymentIconContainer>
+
+                <PaymentIconContainer>
+                    <PaymentIcon color="E4405F">
+                        <Instagram />
+                    </PaymentIcon>
+                </PaymentIconContainer>
+
+                <PaymentIconContainer>
+                    <PaymentIcon color="55ACEE">
+                        <Twitter />
+                    </PaymentIcon>
+
+
+                </PaymentIconContainer>
+
+                <PaymentIconContainer>
+                    <PaymentIcon color="E60023">
+                        <Pinterest />
+                    </PaymentIcon>
+
+
+                </PaymentIconContainer>
+
+                
+
+
+
+
+            </PaymentContainer>
+
+
+
+
         </Right>
 
 
