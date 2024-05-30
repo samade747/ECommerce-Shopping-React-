@@ -7,7 +7,8 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 
 
-const Container = styled.div`   
+const Container = styled.div`  
+  
 
 `
 
