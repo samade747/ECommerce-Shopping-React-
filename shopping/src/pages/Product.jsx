@@ -1,6 +1,7 @@
 import React from 'react'
+import styled 
 
-const Container = 
+const Container = styled-
 
 
 const Product = () => {
