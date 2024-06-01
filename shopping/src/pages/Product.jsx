@@ -5,7 +5,7 @@ import Newsletter from '../components/Newsletter'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
-import { Filter } from '@mui/icons-material'
+// import { Filter } from '@mui/icons-material'
 
 
 
@@ -99,6 +99,8 @@ const FilterSize = styled.select`
 const FilterSizeOption = styled.option`
 
 `
+
+
 
 
 
