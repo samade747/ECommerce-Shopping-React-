@@ -2,7 +2,29 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.div`
-  d
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+` 
+
+const Button = styled.button`
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;  
 
 `
 const Wrapper = styled.div`
@@ -29,7 +51,12 @@ const Input = styled.input`
   margin: 10px 0px;
   padding: 10px;
 `
-
+const Link = styled.a`
+  margin: 5px 0px;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+`
 
 const Login = () => {
   return (
