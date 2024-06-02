@@ -20,7 +20,7 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  
+
 `;
 
 const TopButton = styled.button`
@@ -33,7 +33,9 @@ const TopButton = styled.button`
 
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+
+`;
 
 const TopText = styled.span`
   text-decoration: underline;
@@ -71,9 +73,13 @@ const Details = styled.div`
   justify-content: space-around;
 `;
 
-const ProductName = styled.span``;
+const ProductName = styled.span`
 
-const ProductId = styled.span``;
+`;
+
+const ProductId = styled.span`
+
+`;
 
 const ProductColor = styled.div`
   width: 20px;
