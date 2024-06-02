@@ -1,4 +1,3 @@
-// import { Title } from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -54,7 +53,7 @@ const Button = styled.button`
   
 `
 
-const Agreement = styled.div`
+const Agreeament = styled.div`
   font-size: 12px;
   margin: 20px 0px;
   
@@ -83,12 +82,12 @@ const Register = () => {
               <Input placeholder="email"/>
               <Input placeholder="password"/>
               <Input placeholder="confirm password"/>
-              <Agreement>
-                <span>
+              <Agreeament>
+                
                   By creating an account, I consent to the processing of my personal
                   data in accordance with the <b>PRIVACY POLICY</b>
-                  </span>
-              </Agreement>
+                
+              </Agreeament>
               <Button>CREATE</Button>
           </Form>
       </Wrapper>
