@@ -21,6 +21,7 @@ const Top = styled.div`
   justify-content: space-between;
   padding: 20px;
 
+
 `;
 
 const TopButton = styled.button`
@@ -50,6 +51,7 @@ const Bottom = styled.div`
 
 const Info = styled.div`
   flex: 3;
+
 `;
 
 const Product = styled.div`
@@ -64,6 +66,7 @@ const ProductDetail = styled.div`
 
 const Image = styled.img`
   width: 200px;
+
 `;
 
 const Details = styled.div`
@@ -71,11 +74,15 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+
+
 `;
 
 const ProductName = styled.span`
 
 `;
+
 
 const ProductId = styled.span`
 
@@ -86,9 +93,12 @@ const ProductColor = styled.div`
   height: 20px;
   border-radius: 50%;
   background-color: ${(props) => props.color};
+
 `;
 
-const ProductSize = styled.span``;
+const ProductSize = styled.span`
+
+`;
 
 const PriceDetail = styled.div`
   flex: 1;
@@ -96,12 +106,16 @@ const PriceDetail = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+
+
 `;
 
 const ProductAmountContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
 `;
 
 const ProductAmount = styled.div`
@@ -118,6 +132,8 @@ const Hr = styled.hr`
   background-color: #eee;
   border: none;
   height: 1px;
+  
+
 `;
 
 const Summary = styled.div`
@@ -126,6 +142,7 @@ const Summary = styled.div`
   border-radius: 10px;
   padding: 20px;
   height: 50vh;
+
 `;
 
 const SummaryTitle = styled.h1`
@@ -166,7 +183,7 @@ const Cart = () => {
     {
       id: 1,
       name: 'JESSIE THUNDER SHOES',
-      image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-heel-pumps-1648319013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+      image: 'https://i.ibb.co/DG69bQ4/2.png',  
       price: 160.0,
       size: '37.5',
       color: 'black',
@@ -175,7 +192,7 @@ const Cart = () => {
     {
       id: 2,
       name: 'WOMENS THUNDER SHOES',
-      image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-je-pumps-1648319013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
+      image: 'https://i.ibb.co/cXFnLLV/3.png',
       price: 160.0,
       size: '37.5',
       color: 'black',

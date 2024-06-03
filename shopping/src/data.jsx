@@ -28,43 +28,43 @@ export const SliderItems = [
   export const popularProducts = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/1972115/pexels-photo-1972115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/1759622/pexels-photo-1759622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/1462637/pexels-photo-1462637.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       id: 4,
-      img: "https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
     },
     {
       id: 5,
-      img: "https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=600",  
     },
     {
       id: 6,
-      img: "https://images.pexels.com/photos/994234/pexels-photo-994234.jpeg?auto=compress&cs=tinysrgb&w=600",
+      img: "https://images.pexels.com/photos/2229490/pexels-photo-2229490.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       id: 7,
-      img: "https://via.placeholder.com/200",
+      img: "https://images.pexels.com/photos/1557843/pexels-photo-1557843.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       id: 8,
-      img: "https://via.placeholder.com/200",
+      img: "https://images.pexels.com/photos/920379/pexels-photo-920379.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       id: 9,
-      img: "https://via.placeholder.com/200",
+      img: "https://images.pexels.com/photos/2312223/pexels-photo-2312223.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
       id: 10,
-      img: "https://via.placeholder.com/200",
+      img: "https://images.pexels.com/photos/1457983/pexels-photo-1457983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     }
    
   ];
@@ -72,17 +72,17 @@ export const SliderItems = [
   export const categories = [
     {
       id: 1,
-      img: "https://via.placeholder.com/600x600",
+      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "SHIRT STYLE",
     },
     {
       id: 2,
-      img: "https://via.placeholder.com/600x600",
+      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       title: "LOUNGEWEAR LOVE",
     },
     {
        id: 3,
-       img: "https://via.placeholder.com/600x600",
+       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
        title: "LIGHT JACKETS",
     }
 
