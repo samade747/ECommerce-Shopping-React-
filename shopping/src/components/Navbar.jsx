@@ -8,7 +8,7 @@ import { mobile } from '../responsive.jsx';
 
 
 const Container = styled.div`
-  height: 60px;
+  height: 80px;
   background-color: #fcf5f5;
   position: sticky;
   top: 0;
@@ -16,12 +16,16 @@ const Container = styled.div`
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   ${mobile({ display : 'none' })}
+  margin-bottom: 30px;
+
+  
   
 `;
 
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  
+  padding: 20px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,14 +33,19 @@ const Wrapper = styled.div`
 `;
 
 const Left = styled.div`
+
   flex: 1;
   display: flex;
   align-items: center;
+
+  ${mobile({ display: 'none' })}
 `;
 
 const Center = styled.div`
   flex: 1;
   text-align: center;
+
+  ${mobile({ flex: 2 })}
 `;
 
 const Right = styled.div`
@@ -85,26 +94,28 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <SearchContainer>
-            <SearchInput placeholder="Search" />
-            <SearchIcon style={{ color: 'gray', fontSize: 16 }} />
-          </SearchContainer>
+          <Logo>Shopping</Logo>
         </Left>
         <Center>
-          <Logo>USA SHOPPING</Logo>
+          <MenuItem>HOME</MenuItem>
+          <MenuItem>PRODUCTS</MenuItem>
+          <MenuItem>ABOUT</MenuItem>
+          <MenuItem>CONTACT</MenuItem>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <SearchContainer>
+            <SearchIcon />
+            <SearchInput placeholder="Search" />
+          </SearchContainer>
           <MenuItem>
-            <Badge badgeContent={3} color="primary">
+            <Badge badgeContent={4} color="primary">
               <ShoppingCartCheckoutIcon />
             </Badge>
           </MenuItem>
         </Right>
       </Wrapper>
     </Container>
-  );
+    );
 };
 
 export default Navbar;

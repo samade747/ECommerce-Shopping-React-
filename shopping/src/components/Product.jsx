@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+// import { Link } from 'react-router-dom';
+import { mobile } from '../responsive';
 
 const Info = styled.div`
   opacity: 0;
@@ -18,7 +20,12 @@ const Info = styled.div`
   justify-content: center;
   transition: all 0.5s ease;
   cursor: pointer;
+
+  ${mobile({ display: 'none' })}
+
 `;
+
+
 
 const Container = styled.div`
   flex: 1;
@@ -34,6 +41,8 @@ const Container = styled.div`
   &:hover ${Info} {
     opacity: 1;
   }
+
+  ${mobile({ height: '250px' })}
 `;
 
 const Circle = styled.div`
@@ -42,11 +51,15 @@ const Circle = styled.div`
   border-radius: 50%;
   background-color: white;
   position: absolute;
+
+  ${mobile({ width: '150px', height: '150px' })}
 `;
 
 const Image = styled.img`
   height: 75%;
   z-index: 2;
+
+  ${mobile({ height: '50%' })}
 `;
 
 const Icon = styled.div`
@@ -64,6 +77,8 @@ const Icon = styled.div`
     background-color: #e9f5f5;
     transform: scale(1.1);
   }
+
+  ${mobile({ width: '20px', height: '20px', fontSize: '10px' })}
 `;
 
 const Product = ({ item }) => {

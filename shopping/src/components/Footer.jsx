@@ -6,7 +6,7 @@ import { mobile } from '../responsive.jsx';
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 
   background-color: #${(props) => props.bg};
 
@@ -153,9 +153,8 @@ const PaymentIcon = styled.div`
 const Footer = () => {
   return (
     <PageWrapper>
-      <ContentWrapper>
-        {/* Your main content here */}
-      </ContentWrapper>
+      
+        
       <FooterContainer>
         <Left>
           <Logo>usa shopping</Logo>

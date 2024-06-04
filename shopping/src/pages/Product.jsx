@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import Announcement from '../components/Announcement'
 import { Add, Remove } from '@mui/icons-material'
+import { mobile } from '../responsive'
 
 
 
@@ -18,12 +19,14 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-
+  ${mobile({ padding: '10px', flexDirection: 'column' })}
 
 `
 
 const ImgContainer = styled.div`
   flex: 1;
+
+  ${mobile({ marginBottom: '20px' })}
   
 `
 
@@ -33,6 +36,7 @@ const Image = styled.img`
   height: 90vh;
   object-fit: cover;
 
+  ${mobile({ height: '40vh' })}
 `
 
 
@@ -41,13 +45,13 @@ const InfoContainer = styled.div`
   padding: 0px 50px;  
 
 
-
+  ${mobile({ padding: '10px' })}
 `
 
 
 const Title = styled.h1`
 
-
+${mobile({ fontSize: '24px' })}
 
 `
 
@@ -56,6 +60,7 @@ const Desc = styled.p`
   margin: 20px 0px;
 
 
+  ${mobile({ textAlign: 'center' })}
 `
 
 
@@ -63,7 +68,7 @@ const Price = styled.span`
   font-weight: 100;
   font-size: 40px;
 
-
+  ${mobile({ marginBottom: '20px' })}
 `
 
 const FilterContainer = styled.div`
@@ -72,16 +77,20 @@ const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
+  
 `
 
 const Filter = styled.div`
   display: flex;
+
+  
 `
 
 const FilterTitle = styled.span`
   font-size: 20px;
   font-weight: 200;
 
+  ${mobile({ fontSize: '10px' })}
 `
 const FilterColor = styled.div`
   width: 20px;
@@ -90,15 +99,20 @@ const FilterColor = styled.div`
   background-color: ${props => props.color};
   margin: 0px 5px;
   cursor: pointer;
+
+  ${mobile({ width: '15px', height: '15px' })}
 `
 
 const FilterSize = styled.select`
   margin-left: 10px;
   padding: 5px;
+
+  ${mobile({ margin: '5px' })}
 `
 
 const FilterSizeOption = styled.option`
 
+${mobile({ fontSize: '10px' })}
 `
 
 const AddContainer = styled.div`
@@ -107,12 +121,15 @@ const AddContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 30px 0px;
+
+  ${mobile({ width: '100%' })}
 `
 
 const AmountContainer = styled.div`
   display: flex;
   align-items: center;
   font-weight: 700;
+  ${mobile({ flexDirection: 'column' })}
 `
 
 const Amount = styled.span`
@@ -124,6 +141,7 @@ const Amount = styled.span`
   align-items: center;
   justify-content: center;
   margin: 0px 5px;
+  ${mobile({ margin: '5px 0px' })}
 `
 
 const Button = styled.button`
@@ -136,6 +154,7 @@ const Button = styled.button`
     background-color: #f8f4f4;
   }
 
+  ${mobile({ width: '100%' })}
 `
 
 
@@ -144,58 +163,52 @@ const Button = styled.button`
 const Product = () => {
   return (
     <Container>
-        <Navbar />
-        <Announcement />
-          <Wrapper>
-            <ImgContainer>              
-              <Image src="https://i.ibb.co/S6qMxwr/jean.jpg"/>
-            </ImgContainer>
-
-            <InfoContainer>
-                <Title>Denim Jumpsuit</Title>              
-                <Desc> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nihil quaerat! Voluptatum nam perferendis vero quos optio laborum, veritatis facere deleniti molestias iste obcaecati, at voluptatibus enim ea maiores ratione.
-                Maxime, ex nemo perferendis omnis quas asperiores, maiores quo iure hic consectetur soluta explicabo laboriosam. Sit distinctio consequuntur dolorum nulla culpa amet labore odio architecto tenetur consectetur libero, ipsa vitae.
-                Neque praesentium blanditiis id ex cumque, suscipit officiis repellat dicta, nemo, obcaecati impedit placeat facilis? Explicabo ut debitis vero, dolorum, consequuntur hic iusto recusandae repudiandae nesciunt modi, aspernatur illo beatae.
-                Qui aperiam corrupti aut laboriosam minus similique deleniti dolore eveniet debitis sed, asperiores commodi nemo. Fugiat cum harum quod, expedita velit magnam ea minus consequatur, ipsam nostrum, fuga esse tempore!
-                Doloremque vitae doloribus inventore, 
-                </p> </Desc>       
-                <Price>$ 20</Price>
-                <FilterContainer>
-                  <Filter>
-                      <FilterTitle>Color</FilterTitle>
-                      <FilterColor color="black" />
-                      <FilterColor color="darkblue" />
-                      <FilterColor color="gray" />
-
-                  </Filter>     
-
-                  <Filter>
-                      <FilterTitle>Size</FilterTitle>
-                      <FilterSize>
-                          <FilterSizeOption>XS</FilterSizeOption>
-                          <FilterSizeOption>S</FilterSizeOption>
-                          <FilterSizeOption>M</FilterSizeOption>
-                          <FilterSizeOption>L</FilterSizeOption>
-                          <FilterSizeOption>XL</FilterSizeOption>
-                      </FilterSize>
-                 </Filter>
-                 </FilterContainer> 
-                  <AddContainer>
-                      <AmountContainer>
-                          <Remove />
-                          <Amount>1</Amount>
-                          <Add />
-                     </AmountContainer>
-                     <Button>ADD TO CART</Button>
-                  </AddContainer>
-                       
-            </InfoContainer>       
-          </Wrapper>
-        <Newsletter />
-        <Footer />
-
+      <Navbar />
+      <Announcement />
+      <Wrapper>
+        <ImgContainer>
+          <Image src="https://i.ibb.co/S6qMxwr/jean.jpg" />
+        </ImgContainer>
+        <InfoContainer>
+          <Title>Denim Jumpsuit</Title>
+          <Desc>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            venenatis, dolor in finibus malesuada, lectus ipsum porta nunc,
+            at iaculis arcu nisi sed mi. Donec vitae ipsum eget sapien
+            pellentesque interdum.{' '}
+          </Desc>
+          <Price>$ 20</Price>
+          <FilterContainer>
+            <Filter>
+              <FilterTitle>Color</FilterTitle>
+              <FilterColor color="black" />
+              <FilterColor color="darkblue" />
+              <FilterColor color="gray" />
+            </Filter>
+            <Filter>
+              <FilterTitle>Size</FilterTitle>
+              <FilterSize>
+                <FilterSizeOption>XS</FilterSizeOption>
+                <FilterSizeOption>S</FilterSizeOption>
+                <FilterSizeOption>M</FilterSizeOption>
+                <FilterSizeOption>L</FilterSizeOption>
+                <FilterSizeOption>XL</FilterSizeOption>
+              </FilterSize>
+            </Filter>
+          </FilterContainer>
+          <AddContainer>
+            <AmountContainer>
+              <Remove />
+              <Amount>1</Amount>
+              <Add />
+            </AmountContainer>
+            <Button>ADD TO CART</Button>
+          </AddContainer>
+        </InfoContainer>
+      </Wrapper>
     </Container>
-  )
+
+      )
 }
 
 export default Product
