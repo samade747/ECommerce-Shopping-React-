@@ -152,9 +152,7 @@ const PaymentIcon = styled.div`
 
 const Footer = () => {
   return (
-    <PageWrapper>
-      
-        
+    <PageWrapper>              
       <FooterContainer>
         <Left>
           <Logo>usa shopping</Logo>

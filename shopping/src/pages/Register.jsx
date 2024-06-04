@@ -15,15 +15,17 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center; 
-  
 
   
+
+  ${mobile({ backgroundImage: 'url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")'})}
 
 `
 const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: white;
+
 
 
   ${mobile({ width: '75%' })}
@@ -56,14 +58,18 @@ const Agreement = styled.span`
 
 `
 const Button = styled.button`
-  width: 40%;
+  width: 60%;
+  border-radius: 10px;
+  font-size: 15px;
   border: none;
   padding: 15px 20px;
   background-color: teal;
   color: white;
   cursor: pointer;
   
-  ${mobile({ marginBottom: '5px' })}
+
+  
+  ${mobile({ width: '75%', fontSize: '10px' })}
 
 `
 
@@ -94,8 +100,8 @@ const Register = () => {
       <Wrapper>
           <Title>CREATE AN ACCOUNT</Title>
           <Form>
-              <Input placeholder="name"/>
-              <Input placeholder="last name"/>
+              <Input placeholder="Name"/>
+              <Input placeholder="Last name"/>
               <Input placeholder="username"/>
               <Input placeholder="email"/>
               <Input placeholder="password"/>
